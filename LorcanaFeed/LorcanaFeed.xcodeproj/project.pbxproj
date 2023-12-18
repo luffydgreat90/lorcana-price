@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
+		F854E5042B2FC1550084D082 /* ModelCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreater.swift */; };
+		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
+		F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */; };
+		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
+		F8D995392B1CC22A001D7D73 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */; };
+		F8D9953E2B1CC22A001D7D73 /* LorcanaFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9953D2B1CC22A001D7D73 /* LorcanaFeedTests.swift */; };
+		F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */; };
+		F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */; };
+		F8D995552B1CFFB1001D7D73 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954E2B1CFFB1001D7D73 /* HTTPClient.swift */; };
+		F8D995562B1CFFB1001D7D73 /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954F2B1CFFB1001D7D73 /* Paginated.swift */; };
+		F8D995572B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995512B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift */; };
+		F8D995582B1CFFB1001D7D73 /* DateFormatter+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995522B1CFFB1001D7D73 /* DateFormatter+Helpers.swift */; };
+		F8D9956B2B1D00D2001D7D73 /* ImageDataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995602B1D00D2001D7D73 /* ImageDataMapperTests.swift */; };
+		F8D9956C2B1D00D2001D7D73 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995622B1D00D2001D7D73 /* URLProtocolStub.swift */; };
+		F8D9956D2B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995632B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift */; };
+		F8D995752B1D0CFD001D7D73 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995712B1D0CFD001D7D73 /* SharedTestHelpers.swift */; };
+		F8D995762B1D0CFD001D7D73 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995722B1D0CFD001D7D73 /* SharedLocalizationTestHelpers.swift */; };
+		F8D995772B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995732B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift */; };
+		F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */; };
+		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D9953A2B1CC22A001D7D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D995272B1CC22A001D7D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D9952F2B1CC22A001D7D73;
+			remoteInfo = LorcanaFeed;
+		};
+		F8D995872B1D39E5001D7D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D995272B1CC22A001D7D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D9957D2B1D39E5001D7D73;
+			remoteInfo = LorcanaSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		F854E5032B2FC1550084D082 /* ModelCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreater.swift; sourceTree = "<group>"; };
+		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D9953D2B1CC22A001D7D73 /* LorcanaFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaFeedTests.swift; sourceTree = "<group>"; };
+		F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataMapper.swift; sourceTree = "<group>"; };
+		F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		F8D9954E2B1CFFB1001D7D73 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F8D9954F2B1CFFB1001D7D73 /* Paginated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
+		F8D995512B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		F8D995522B1CFFB1001D7D73 /* DateFormatter+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helpers.swift"; sourceTree = "<group>"; };
+		F8D995602B1D00D2001D7D73 /* ImageDataMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataMapperTests.swift; sourceTree = "<group>"; };
+		F8D995622B1D00D2001D7D73 /* URLProtocolStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		F8D995632B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		F8D995712B1D0CFD001D7D73 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		F8D995722B1D0CFD001D7D73 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
+		F8D995732B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D9952D2B1CC22A001D7D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995352B1CC22A001D7D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D995392B1CC22A001D7D73 /* LorcanaFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9957B2B1D39E5001D7D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995822B1D39E5001D7D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F854E5012B2FC0730084D082 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F854E5022B2FC0790084D082 /* Presentation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F854E5022B2FC0790084D082 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F854E5032B2FC1550084D082 /* ModelCreater.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F88989DE2B22852200BACAA0 /* CardsListUI */ = {
+			isa = PBXGroup;
+			children = (
+				F88989DF2B22855000BACAA0 /* Views */,
+			);
+			path = CardsListUI;
+			sourceTree = "<group>";
+		};
+		F88989DF2B22855000BACAA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F88989E02B22860300BACAA0 /* CardListCell.swift */,
+				F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F88F0CD02B2CF6FD00D7A5F8 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				F88F0CD12B2CF78300D7A5F8 /* Presentation */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		F88F0CD12B2CF78300D7A5F8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F88F0CD62B2E802300D7A5F8 /* CardDetailUI */ = {
+			isa = PBXGroup;
+			children = (
+				F88F0CD72B2E80E800D7A5F8 /* Views */,
+			);
+			path = CardDetailUI;
+			sourceTree = "<group>";
+		};
+		F88F0CD72B2E80E800D7A5F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F854E4FF2B2FC0610084D082 /* CardDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8D995262B1CC22A001D7D73 = {
+			isa = PBXGroup;
+			children = (
+				F8D995322B1CC22A001D7D73 /* LorcanaFeed */,
+				F8D9953C2B1CC22A001D7D73 /* LorcanaFeedTests */,
+				F8D9957F2B1D39E5001D7D73 /* LorcanaSwiftUI */,
+				F8D995892B1D39E5001D7D73 /* LorcanaSwiftUITests */,
+				F8D995312B1CC22A001D7D73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D995312B1CC22A001D7D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */,
+				F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */,
+				F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */,
+				F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D995322B1CC22A001D7D73 /* LorcanaFeed */ = {
+			isa = PBXGroup;
+			children = (
+				F88F0CD02B2CF6FD00D7A5F8 /* Card */,
+				F8D9954A2B1CFFB1001D7D73 /* Shared */,
+			);
+			path = LorcanaFeed;
+			sourceTree = "<group>";
+		};
+		F8D9953C2B1CC22A001D7D73 /* LorcanaFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995702B1D0CFD001D7D73 /* Helpers */,
+				F8D995592B1D00D2001D7D73 /* Shared */,
+				F8D9953D2B1CC22A001D7D73 /* LorcanaFeedTests.swift */,
+			);
+			path = LorcanaFeedTests;
+			sourceTree = "<group>";
+		};
+		F8D9954A2B1CFFB1001D7D73 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9954B2B1CFFB1001D7D73 /* API */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F8D9954B2B1CFFB1001D7D73 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */,
+				F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */,
+				F8D9954E2B1CFFB1001D7D73 /* HTTPClient.swift */,
+				F8D9954F2B1CFFB1001D7D73 /* Paginated.swift */,
+				F8D995502B1CFFB1001D7D73 /* Helpers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F8D995502B1CFFB1001D7D73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995512B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift */,
+				F8D995522B1CFFB1001D7D73 /* DateFormatter+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8D995592B1D00D2001D7D73 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9955F2B1D00D2001D7D73 /* API */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F8D9955F2B1D00D2001D7D73 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995602B1D00D2001D7D73 /* ImageDataMapperTests.swift */,
+				F8D995612B1D00D2001D7D73 /* Helpers */,
+				F8D995632B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F8D995612B1D00D2001D7D73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995622B1D00D2001D7D73 /* URLProtocolStub.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8D995702B1D0CFD001D7D73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D995712B1D0CFD001D7D73 /* SharedTestHelpers.swift */,
+				F8D995722B1D0CFD001D7D73 /* SharedLocalizationTestHelpers.swift */,
+				F8D995732B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8D9957F2B1D39E5001D7D73 /* LorcanaSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F854E5012B2FC0730084D082 /* Shared */,
+				F88F0CD62B2E802300D7A5F8 /* CardDetailUI */,
+				F88989DE2B22852200BACAA0 /* CardsListUI */,
+			);
+			path = LorcanaSwiftUI;
+			sourceTree = "<group>";
+		};
+		F8D995892B1D39E5001D7D73 /* LorcanaSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */,
+			);
+			path = LorcanaSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8D9952B2B1CC22A001D7D73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995792B1D39E5001D7D73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F8D9952F2B1CC22A001D7D73 /* LorcanaFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D995422B1CC22A001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaFeed" */;
+			buildPhases = (
+				F8D9952B2B1CC22A001D7D73 /* Headers */,
+				F8D9952C2B1CC22A001D7D73 /* Sources */,
+				F8D9952D2B1CC22A001D7D73 /* Frameworks */,
+				F8D9952E2B1CC22A001D7D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LorcanaFeed;
+			productName = LorcanaFeed;
+			productReference = F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8D995372B1CC22A001D7D73 /* LorcanaFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D995452B1CC22A001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaFeedTests" */;
+			buildPhases = (
+				F8D995342B1CC22A001D7D73 /* Sources */,
+				F8D995352B1CC22A001D7D73 /* Frameworks */,
+				F8D995362B1CC22A001D7D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D9953B2B1CC22A001D7D73 /* PBXTargetDependency */,
+			);
+			name = LorcanaFeedTests;
+			productName = LorcanaFeedTests;
+			productReference = F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8D9957D2B1D39E5001D7D73 /* LorcanaSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D995912B1D39E5001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaSwiftUI" */;
+			buildPhases = (
+				F8D995792B1D39E5001D7D73 /* Headers */,
+				F8D9957A2B1D39E5001D7D73 /* Sources */,
+				F8D9957B2B1D39E5001D7D73 /* Frameworks */,
+				F8D9957C2B1D39E5001D7D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LorcanaSwiftUI;
+			productName = LorcanaSwiftUI;
+			productReference = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8D995842B1D39E5001D7D73 /* LorcanaSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D995922B1D39E5001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaSwiftUITests" */;
+			buildPhases = (
+				F8D995812B1D39E5001D7D73 /* Sources */,
+				F8D995822B1D39E5001D7D73 /* Frameworks */,
+				F8D995832B1D39E5001D7D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D995882B1D39E5001D7D73 /* PBXTargetDependency */,
+			);
+			name = LorcanaSwiftUITests;
+			productName = LorcanaSwiftUITests;
+			productReference = F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D995272B1CC22A001D7D73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F8D9952F2B1CC22A001D7D73 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F8D995372B1CC22A001D7D73 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F8D9957D2B1D39E5001D7D73 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					F8D995842B1D39E5001D7D73 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F8D9952A2B1CC22A001D7D73 /* Build configuration list for PBXProject "LorcanaFeed" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D995262B1CC22A001D7D73;
+			productRefGroup = F8D995312B1CC22A001D7D73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D9952F2B1CC22A001D7D73 /* LorcanaFeed */,
+				F8D995372B1CC22A001D7D73 /* LorcanaFeedTests */,
+				F8D9957D2B1D39E5001D7D73 /* LorcanaSwiftUI */,
+				F8D995842B1D39E5001D7D73 /* LorcanaSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D9952E2B1CC22A001D7D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995362B1CC22A001D7D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9957C2B1D39E5001D7D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995832B1D39E5001D7D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D9952C2B1CC22A001D7D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */,
+				F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */,
+				F8D995572B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift in Sources */,
+				F8D995552B1CFFB1001D7D73 /* HTTPClient.swift in Sources */,
+				F8D995582B1CFFB1001D7D73 /* DateFormatter+Helpers.swift in Sources */,
+				F8D995562B1CFFB1001D7D73 /* Paginated.swift in Sources */,
+				F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995342B1CC22A001D7D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D9956D2B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift in Sources */,
+				F8D995752B1D0CFD001D7D73 /* SharedTestHelpers.swift in Sources */,
+				F8D9956C2B1D00D2001D7D73 /* URLProtocolStub.swift in Sources */,
+				F8D995772B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				F8D9956B2B1D00D2001D7D73 /* ImageDataMapperTests.swift in Sources */,
+				F8D995762B1D0CFD001D7D73 /* SharedLocalizationTestHelpers.swift in Sources */,
+				F8D9953E2B1CC22A001D7D73 /* LorcanaFeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D9957A2B1D39E5001D7D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F854E5042B2FC1550084D082 /* ModelCreater.swift in Sources */,
+				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
+				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
+				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D995812B1D39E5001D7D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D9953B2B1CC22A001D7D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D9952F2B1CC22A001D7D73 /* LorcanaFeed */;
+			targetProxy = F8D9953A2B1CC22A001D7D73 /* PBXContainerItemProxy */;
+		};
+		F8D995882B1D39E5001D7D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D9957D2B1D39E5001D7D73 /* LorcanaSwiftUI */;
+			targetProxy = F8D995872B1D39E5001D7D73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8D995402B1CC22A001D7D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8D995412B1CC22A001D7D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8D995432B1CC22A001D7D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeed";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D995442B1CC22A001D7D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeed";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8D995462B1CC22A001D7D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D995472B1CC22A001D7D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8D9958D2B1D39E5001D7D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D9958E2B1D39E5001D7D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8D9958F2B1D39E5001D7D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D995902B1D39E5001D7D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D9952A2B1CC22A001D7D73 /* Build configuration list for PBXProject "LorcanaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D995402B1CC22A001D7D73 /* Debug */,
+				F8D995412B1CC22A001D7D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D995422B1CC22A001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D995432B1CC22A001D7D73 /* Debug */,
+				F8D995442B1CC22A001D7D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D995452B1CC22A001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D995462B1CC22A001D7D73 /* Debug */,
+				F8D995472B1CC22A001D7D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D995912B1D39E5001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9958D2B1D39E5001D7D73 /* Debug */,
+				F8D9958E2B1D39E5001D7D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D995922B1D39E5001D7D73 /* Build configuration list for PBXNativeTarget "LorcanaSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D9958F2B1D39E5001D7D73 /* Debug */,
+				F8D995902B1D39E5001D7D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D995272B1CC22A001D7D73 /* Project object */;
+}
