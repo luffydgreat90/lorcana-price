@@ -13,12 +13,16 @@ public struct CardPriceViewModel: Identifiable {
     public let name: String
     public let cents: Int
     public let price: String
+    public let condition: String
+    public let language: String
     
-    public init(id: Int, expansion: String, name: String, cents: Int, price: String) {
+    public init(id: Int, expansion: String, name: String, cents: Int, price: String, condition: String, language: String) {
         self.id = id
         self.expansion = expansion
         self.name = name
         self.cents = cents
         self.price = price
+        self.condition = condition
+        self.language = language
     }
 }

@@ -14,6 +14,6 @@ enum ModelCreator {
     }
     
     static func makeCardPriceModel(id: Int = 1) -> CardPriceViewModel {
-        CardPriceViewModel(id: id, expansion: "First Chapter", name: "Test", cents: 1234, price: "$12.34")
+        CardPriceViewModel(id: id, expansion: "First Chapter", name: "Test", cents: 1234, price: "$12.34", condition: "Near Mint", language: "EN")
     }
 }

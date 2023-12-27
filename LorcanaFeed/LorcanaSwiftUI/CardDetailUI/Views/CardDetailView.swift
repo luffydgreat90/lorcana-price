@@ -10,6 +10,7 @@ import LorcanaFeed
 
 struct CardDetailView: View {
     let card: CardViewModel
+    let cardPrices: [CardPriceViewModel]
     
     var body: some View {
         ScrollView(.vertical) {
@@ -45,11 +46,16 @@ struct CardDetailView: View {
                     
                     Spacer()
                 })
+                
+                ForEach(cardPrices) { cardPrice in
+                    CardPriceCell(cardPrice: cardPrice)
+                }
             }
         }
     }
 }
 
 #Preview {
-    CardDetailView(card: ModelCreator.makeCardModel())
+    CardDetailView(card: ModelCreator.makeCardModel(),
+                   cardPrices: [ModelCreator.makeCardPriceModel()])
 }

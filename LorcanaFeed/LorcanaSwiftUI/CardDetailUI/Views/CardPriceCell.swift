@@ -12,10 +12,25 @@ struct CardPriceCell: View {
     let cardPrice: CardPriceViewModel
     
     var body: some View {
-        HStack(alignment: .center, content: {
-            Text("Price:")
-            Text(cardPrice.price)
+        VStack(alignment: .leading, content: {
+            HStack(alignment: .center, content: {
+                Text("Price:")
+                    .fontWeight(.bold)
+                Text(cardPrice.price)
+            })
+            HStack(alignment: .center, content: {
+                Text("Condition:")
+                    .fontWeight(.bold)
+                Text(cardPrice.condition)
+            })
+            
+            HStack(alignment: .center, content: {
+                Text("Language:")
+                    .fontWeight(.bold)
+                Text(cardPrice.language)
+            })
         })
+        
     }
 }
 
