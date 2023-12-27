@@ -9,7 +9,7 @@ import SwiftUI
 import LorcanaFeed
 
 struct CardDetailView: View {
-    var card: CardViewModel
+    let card: CardViewModel
     
     var body: some View {
         ScrollView(.vertical) {
@@ -41,12 +41,6 @@ struct CardDetailView: View {
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                         .padding(.trailing, 8)
-                        
-                        Text("Price:")
-                          .font(.footnote)
-                          .multilineTextAlignment(.leading)
-                          .lineLimit(2)
-                          .padding(.trailing, 8)
                     }
                     
                     Spacer()
@@ -57,5 +51,5 @@ struct CardDetailView: View {
 }
 
 #Preview {
-    CardDetailView(card: ModelCreater.makeCardModel())
+    CardDetailView(card: ModelCreator.makeCardModel())
 }

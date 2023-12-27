@@ -23,5 +23,5 @@ struct CardListView: View {
 }
 
 #Preview {
-    CardListView(cards: [ModelCreater.makeCardModel()])
+    CardListView(cards: [ModelCreator.makeCardModel()])
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
-		F854E5042B2FC1550084D082 /* ModelCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreater.swift */; };
+		F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreator.swift */; };
 		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
 		F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */; };
 		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
@@ -28,6 +28,9 @@
 		F8D995772B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D995732B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift */; };
 		F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */; };
 		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
+		F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */; };
+		F8F139EB2B3CCA1700D4D7F1 /* CardPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */; };
+		F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
-		F854E5032B2FC1550084D082 /* ModelCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreater.swift; sourceTree = "<group>"; };
+		F854E5032B2FC1550084D082 /* ModelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreator.swift; sourceTree = "<group>"; };
 		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
@@ -71,6 +74,9 @@
 		F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
+		F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMapper.swift; sourceTree = "<group>"; };
+		F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceViewModel.swift; sourceTree = "<group>"; };
+		F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +124,7 @@
 		F854E5022B2FC0790084D082 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F854E5032B2FC1550084D082 /* ModelCreater.swift */,
+				F854E5032B2FC1550084D082 /* ModelCreator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */,
+				F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F854E4FF2B2FC0610084D082 /* CardDetailView.swift */,
+				F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +308,7 @@
 		F8F139E72B3CA58700D4D7F1 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -480,9 +489,11 @@
 			files = (
 				F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */,
 				F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */,
+				F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */,
 				F8D995572B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				F8D995552B1CFFB1001D7D73 /* HTTPClient.swift in Sources */,
 				F8D995582B1CFFB1001D7D73 /* DateFormatter+Helpers.swift in Sources */,
+				F8F139EB2B3CCA1700D4D7F1 /* CardPriceViewModel.swift in Sources */,
 				F8D995562B1CFFB1001D7D73 /* Paginated.swift in Sources */,
 				F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */,
 			);
@@ -506,7 +517,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F854E5042B2FC1550084D082 /* ModelCreater.swift in Sources */,
+				F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */,
+				F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,

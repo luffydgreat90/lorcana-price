@@ -9,12 +9,10 @@ struct CardListCell: View {
             Image(systemName: card.imageSmall)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100) // Adjust the size as needed
+                .frame(width: 100, height: 100)
           
             VStack(alignment: .leading) {
                 Text("Name: \(card.name)")
-                Text("Chapter: \(card.chapter)")
-                Text("Price: \(card.price)")
             }
             Spacer()
         }.padding()
@@ -24,6 +22,6 @@ struct CardListCell: View {
 struct CustomCell_Previews: PreviewProvider {
     static var previews: some View {
       
-        CardListCell(card: ModelCreater.makeCardModel())
+        CardListCell(card: ModelCreator.makeCardModel())
     }
 }
