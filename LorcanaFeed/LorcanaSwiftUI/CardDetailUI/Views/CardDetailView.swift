@@ -24,7 +24,7 @@ struct CardDetailView: View {
                     .dynamicTypeSize(.xxLarge)
                 
                 HStack(alignment: .center, content: {
-                    Image(systemName: "photo")
+                    Image(systemName: card.imageSmall)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 90, height: 90)
@@ -41,6 +41,12 @@ struct CardDetailView: View {
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                         .padding(.trailing, 8)
+                        
+                        Text("Price:")
+                          .font(.footnote)
+                          .multilineTextAlignment(.leading)
+                          .lineLimit(2)
+                          .padding(.trailing, 8)
                     }
                     
                     Spacer()

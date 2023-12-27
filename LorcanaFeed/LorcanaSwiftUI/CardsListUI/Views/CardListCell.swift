@@ -6,7 +6,7 @@ struct CardListCell: View {
 
     var body: some View {
         HStack {
-            Image(systemName: "photo.artframe")
+            Image(systemName: card.imageSmall)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100, height: 100) // Adjust the size as needed
