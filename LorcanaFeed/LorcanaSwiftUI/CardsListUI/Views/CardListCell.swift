@@ -23,5 +23,6 @@ struct CustomCell_Previews: PreviewProvider {
     static var previews: some View {
       
         CardListCell(card: ModelCreator.makeCardModel())
+            .previewLayout(.sizeThatFits)
     }
 }

@@ -17,6 +17,7 @@ struct CardPriceCell: View {
                 Text("Price:")
                     .fontWeight(.bold)
                 Text(cardPrice.price)
+                Spacer()
             })
             HStack(alignment: .center, content: {
                 Text("Condition:")
@@ -29,8 +30,7 @@ struct CardPriceCell: View {
                     .fontWeight(.bold)
                 Text(cardPrice.language)
             })
-        })
-        
+        }).padding()
     }
 }
 

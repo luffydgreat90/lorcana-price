@@ -8,15 +8,10 @@
 import Foundation
 
 public enum CardMapper {
-    private struct Root: Decodable {
-        let data: [RemoteCard]
-    }
-    
     private struct RemoteCard: Decodable {
         let id: Int
         let name: String
         let version: String
-        let number: String
         let expansion_id: Int
         let image: Image
         let fixed_properties: FixedProperties
@@ -44,11 +39,11 @@ public enum CardMapper {
     public static func map(_ data: Data, from response: HTTPURLResponse, chapter: String) throws -> [CardViewModel] {
         let decoder = JSONDecoder()
         
-        guard response.isOK, let root = try? decoder.decode(Root.self, from: data) else {
+        guard response.isOK, let root = try? decoder.decode([RemoteCard].self, from: data) else {
             throw Error.invalidData
         }
         
-        return root.data.map { remote in
+        return root.map { remote in
             CardViewModel(
                 id: remote.id,
                 imageSmall: remote.image.preview.url,
