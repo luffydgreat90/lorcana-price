@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80D8BDA2B4632D7001B3E97 /* CardPriceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */; };
 		F813A0752B3CEC9A00C4F81B /* CardsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */; };
 		F813A0772B3CF4C200C4F81B /* CardPriceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0762B3CF4C200C4F81B /* CardPriceMapper.swift */; };
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapperTests.swift; sourceTree = "<group>"; };
 		F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMapperTests.swift; sourceTree = "<group>"; };
 		F813A0762B3CF4C200C4F81B /* CardPriceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapper.swift; sourceTree = "<group>"; };
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */,
+				F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 			files = (
 				F8D9956D2B1D00D2001D7D73 /* URLSessionHTTPClientTests.swift in Sources */,
 				F8D995752B1D0CFD001D7D73 /* SharedTestHelpers.swift in Sources */,
+				F80D8BDA2B4632D7001B3E97 /* CardPriceMapperTests.swift in Sources */,
 				F8D9956C2B1D00D2001D7D73 /* URLProtocolStub.swift in Sources */,
 				F8D995772B1D0CFD001D7D73 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				F8D9956B2B1D00D2001D7D73 /* ImageDataMapperTests.swift in Sources */,
