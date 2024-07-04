@@ -9,28 +9,29 @@ import Foundation
 
 public enum CardMapper {
     private struct RemoteCard: Decodable {
-        let id: Int
+        let id: String
         let name: String
         let version: String
-        let expansion_id: Int
-        let image: Image
-        let fixed_properties: FixedProperties
+        let image_uris: ImageURI
+        let rarity: String
+        let prices: Prices
     }
     
-    private struct Image: Decodable {
-        let show: ImageURL
-        let preview: ImageURL
+    private struct ImageURI: Decodable {
+        let digital: Digital
     }
     
-    private struct ImageURL: Decodable {
-        let url: String
+    private struct Digital: Decodable {
+        let small: URL
+        let normal: URL
+        let large: URL
     }
     
-    private struct FixedProperties: Decodable {
-        let collector_number: String
-        let lorcana_rarity: String
+    private struct Prices: Decodable {
+        let usd: String
+        let usd_foil: String
     }
-    
+
     private enum Error: Swift.Error {
         case invalidData
     }
@@ -43,17 +44,16 @@ public enum CardMapper {
             throw Error.invalidData
         }
         
-        return root.map { remote in
+        return root.map { card in
             CardViewModel(
-                id: remote.id,
-                imageSmall: remote.image.preview.url,
-                imageBig: remote.image.show.url, 
-                name: remote.name,
-                chapter: chapter,
-                version: remote.version,
-                collectorNumber: remote.fixed_properties.collector_number,
-                rarity: remote.fixed_properties.lorcana_rarity
-            )
+                id: card.id,
+                name: card.name,
+                version: card.version,
+                imageSmall: card.image_uris.digital.small,
+                imageBig: card.image_uris.digital.large,
+                rarity: card.rarity,
+                norlamPrice: card.prices.usd,
+                foilPrice: card.prices.usd_foil)
         }
     }
 }

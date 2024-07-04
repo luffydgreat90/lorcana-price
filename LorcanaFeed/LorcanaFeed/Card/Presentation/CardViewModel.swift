@@ -8,21 +8,23 @@
 import Foundation
 
 public struct CardViewModel: Identifiable {
-    public let id: Int
-    public let imageSmall: String
-    public let imageBig: String
+    public let id: String
     public let name: String
     public let version: String
-    public let collectorNumber: String
+    public let imageSmall: URL
+    public let imageBig: URL
     public let rarity: String
+    public let norlamPrice: String
+    public let foilPrice: String
     
-    public init(id: Int, imageSmall: String, imageBig: String, name: String, chapter: String, version: String, collectorNumber: String, rarity: String) {
+    public init(id: String, name: String, version: String, imageSmall: URL, imageBig: URL, rarity: String, norlamPrice: String, foilPrice: String) {
         self.id = id
         self.name = name
+        self.version = version
         self.imageSmall = imageSmall
         self.imageBig = imageBig
-        self.version = version
-        self.collectorNumber = collectorNumber
         self.rarity = rarity
+        self.norlamPrice = norlamPrice
+        self.foilPrice = foilPrice
     }
 }

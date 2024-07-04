@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80519C22C36FA3C00D9FA07 /* SetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80519C12C36FA3C00D9FA07 /* SetMapper.swift */; };
 		F80D8BDA2B4632D7001B3E97 /* CardPriceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */; };
 		F813A0752B3CEC9A00C4F81B /* CardsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */; };
-		F813A0772B3CF4C200C4F81B /* CardPriceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0762B3CF4C200C4F81B /* CardPriceMapper.swift */; };
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
 		F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreator.swift */; };
 		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
@@ -31,7 +31,6 @@
 		F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */; };
 		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
 		F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */; };
-		F8F139EB2B3CCA1700D4D7F1 /* CardPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */; };
 		F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80519C12C36FA3C00D9FA07 /* SetMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMapper.swift; sourceTree = "<group>"; };
 		F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapperTests.swift; sourceTree = "<group>"; };
 		F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMapperTests.swift; sourceTree = "<group>"; };
-		F813A0762B3CF4C200C4F81B /* CardPriceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapper.swift; sourceTree = "<group>"; };
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		F854E5032B2FC1550084D082 /* ModelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreator.swift; sourceTree = "<group>"; };
 		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
 		F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMapper.swift; sourceTree = "<group>"; };
-		F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceViewModel.swift; sourceTree = "<group>"; };
 		F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80519BF2C36FA0300D9FA07 /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+				F80519C02C36FA2900D9FA07 /* API */,
+			);
+			path = Sets;
+			sourceTree = "<group>";
+		};
+		F80519C02C36FA2900D9FA07 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F80519C12C36FA3C00D9FA07 /* SetMapper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		F813A0722B3CE81600C4F81B /* Card */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */,
-				F8F139EA2B3CCA1700D4D7F1 /* CardPriceViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 		F8D995322B1CC22A001D7D73 /* LorcanaFeed */ = {
 			isa = PBXGroup;
 			children = (
+				F80519BF2C36FA0300D9FA07 /* Sets */,
 				F88F0CD02B2CF6FD00D7A5F8 /* Card */,
 				F8D9954A2B1CFFB1001D7D73 /* Shared */,
 			);
@@ -330,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */,
-				F813A0762B3CF4C200C4F81B /* CardPriceMapper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -511,12 +524,11 @@
 			files = (
 				F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */,
 				F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */,
-				F813A0772B3CF4C200C4F81B /* CardPriceMapper.swift in Sources */,
 				F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */,
 				F8D995572B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				F8D995552B1CFFB1001D7D73 /* HTTPClient.swift in Sources */,
 				F8D995582B1CFFB1001D7D73 /* DateFormatter+Helpers.swift in Sources */,
-				F8F139EB2B3CCA1700D4D7F1 /* CardPriceViewModel.swift in Sources */,
+				F80519C22C36FA3C00D9FA07 /* SetMapper.swift in Sources */,
 				F8D995562B1CFFB1001D7D73 /* Paginated.swift in Sources */,
 				F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */,
 			);
