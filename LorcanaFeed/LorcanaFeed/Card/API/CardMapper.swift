@@ -35,8 +35,7 @@ public enum CardMapper {
     private enum Error: Swift.Error {
         case invalidData
     }
-    
-    
+
     public static func map(_ data: Data, from response: HTTPURLResponse, chapter: String) throws -> [CardViewModel] {
         let decoder = JSONDecoder()
         

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F80519C22C36FA3C00D9FA07 /* SetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80519C12C36FA3C00D9FA07 /* SetMapper.swift */; };
+		F80519C52C383E2700D9FA07 /* SetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80519C42C383E2700D9FA07 /* SetViewModel.swift */; };
 		F80D8BDA2B4632D7001B3E97 /* CardPriceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */; };
 		F813A0752B3CEC9A00C4F81B /* CardsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */; };
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		F80519C12C36FA3C00D9FA07 /* SetMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMapper.swift; sourceTree = "<group>"; };
+		F80519C42C383E2700D9FA07 /* SetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewModel.swift; sourceTree = "<group>"; };
 		F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapperTests.swift; sourceTree = "<group>"; };
 		F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMapperTests.swift; sourceTree = "<group>"; };
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		F80519BF2C36FA0300D9FA07 /* Sets */ = {
 			isa = PBXGroup;
 			children = (
+				F80519C32C383E0A00D9FA07 /* Presentation */,
 				F80519C02C36FA2900D9FA07 /* API */,
 			);
 			path = Sets;
@@ -129,6 +132,14 @@
 				F80519C12C36FA3C00D9FA07 /* SetMapper.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F80519C32C383E0A00D9FA07 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F80519C42C383E2700D9FA07 /* SetViewModel.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		F813A0722B3CE81600C4F81B /* Card */ = {
@@ -527,6 +538,7 @@
 				F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */,
 				F8D995572B1CFFB1001D7D73 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				F8D995552B1CFFB1001D7D73 /* HTTPClient.swift in Sources */,
+				F80519C52C383E2700D9FA07 /* SetViewModel.swift in Sources */,
 				F8D995582B1CFFB1001D7D73 /* DateFormatter+Helpers.swift in Sources */,
 				F80519C22C36FA3C00D9FA07 /* SetMapper.swift in Sources */,
 				F8D995562B1CFFB1001D7D73 /* Paginated.swift in Sources */,
