@@ -9,11 +9,7 @@ import Foundation
 import LorcanaFeed
 
 enum ModelCreator {
-    static func makeCardModel(id: Int = 1) -> CardViewModel {
-        CardViewModel(id: id, imageSmall: "photo.artframe", imageBig: "photo.artframe", name: "Test", chapter: "First", version: "Alternate Art", collectorNumber: "1/100", rarity: "Rare")
-    }
-    
-    static func makeCardPriceModel(id: Int = 1) -> CardPriceViewModel {
-        CardPriceViewModel(id: id, expansion: "First Chapter", name: "Test", cents: 1234, price: "$12.34", condition: "Near Mint", language: "EN")
+    static func makeCardModel(id: String = "1") -> CardViewModel {
+        CardViewModel(id: id, name: "test", version: "1", imageSmall: URL(string: "test"), imageBig: URL(string: "test"), rarity: "common", norlamPrice: "1.00", foilPrice: "1.00")
     }
 }

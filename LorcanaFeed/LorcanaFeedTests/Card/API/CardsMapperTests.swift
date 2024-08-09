@@ -17,7 +17,6 @@ final class CardsMapperTests: XCTestCase {
         
         XCTAssertNotNil(card)
         XCTAssertEqual(card?.name, "Mickey Mouse - Wayward Sorcerer")
-        XCTAssertEqual(card?.collectorNumber, "208/204")
         XCTAssertEqual(card?.rarity, "Enchanted")
     }
     

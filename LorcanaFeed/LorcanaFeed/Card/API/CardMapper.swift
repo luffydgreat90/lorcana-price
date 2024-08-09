@@ -28,8 +28,8 @@ public enum CardMapper {
     }
     
     private struct Prices: Decodable {
-        let usd: String
-        let usd_foil: String
+        let usd: Decimal
+        let usd_foil: Decimal
     }
 
     private enum Error: Swift.Error {
@@ -51,8 +51,8 @@ public enum CardMapper {
                 imageSmall: card.image_uris.digital.small,
                 imageBig: card.image_uris.digital.large,
                 rarity: card.rarity,
-                norlamPrice: card.prices.usd,
-                foilPrice: card.prices.usd_foil)
+                norlamPrice: card.prices.usd.formatted(),
+                foilPrice: card.prices.usd_foil.formatted())
         }
     }
 }

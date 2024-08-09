@@ -10,7 +10,6 @@ import LorcanaFeed
 
 struct CardDetailView: View {
     let card: CardViewModel
-    let cardPrices: [CardPriceViewModel]
     
     var body: some View {
         ScrollView(.vertical) {
@@ -25,8 +24,7 @@ struct CardDetailView: View {
                     .dynamicTypeSize(.xxLarge)
                 
                 HStack(alignment: .center, content: {
-                    Image(systemName: card.imageSmall)
-                        .resizable()
+                    AsyncImage(url: card.imageSmall)
                         .scaledToFill()
                         .frame(width: 90, height: 90)
                         .padding()
@@ -46,16 +44,12 @@ struct CardDetailView: View {
                     
                     Spacer()
                 })
-                
-                ForEach(cardPrices) { cardPrice in
-                    CardPriceCell(cardPrice: cardPrice)
-                }
+
             }
         }
     }
 }
 
 #Preview {
-    CardDetailView(card: ModelCreator.makeCardModel(),
-                   cardPrices: [ModelCreator.makeCardPriceModel()])
+    CardDetailView(card: ModelCreator.makeCardModel())
 }
