@@ -13,7 +13,7 @@ public enum SetMapper {
     }
     
     private struct RemoteSet: Decodable {
-        let id: Int
+        let id: String
         let name: String
         let code: String
         let released_at: String

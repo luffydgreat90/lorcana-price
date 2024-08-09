@@ -12,6 +12,7 @@ struct CardListCell: View {
           
             VStack(alignment: .leading) {
                 Text("Name: \(card.name)")
+                Text("Rarity: \(card.rarity)")
             }
             Spacer()
         }.padding()
