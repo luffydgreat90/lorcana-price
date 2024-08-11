@@ -32,7 +32,6 @@
 		F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */; };
 		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
 		F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */; };
-		F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,6 @@
 		F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
 		F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMapper.swift; sourceTree = "<group>"; };
-		F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				F854E4FF2B2FC0610084D082 /* CardDetailView.swift */,
-				F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -566,7 +563,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */,
-				F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,

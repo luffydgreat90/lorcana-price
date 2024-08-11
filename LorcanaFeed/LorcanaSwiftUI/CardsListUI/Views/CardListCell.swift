@@ -11,11 +11,13 @@ struct CardListCell: View {
                 .frame(width: 100, height: 100)
           
             VStack(alignment: .leading) {
-                Text("Name: \(card.name)")
+                Text("Name: \(card.name)").bold()
                 Text("Rarity: \(card.rarity)")
+                Text("Price: \(card.norlamPrice)")
+                Text("Price (foil): \(card.foilPrice)")
             }
             Spacer()
-        }.padding()
+        }.padding(8)
     }
 }
 

@@ -13,7 +13,7 @@ struct CardListView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .center, spacing: 30) {
+            VStack(alignment: .center, spacing: 8) {
                 ForEach(cards) { card in
                     CardListCell(card: card)
                 }
@@ -23,5 +23,6 @@ struct CardListView: View {
 }
 
 #Preview {
-    CardListView(cards: [ModelCreator.makeCardModel()])
+    CardListView(cards: [ModelCreator.makeCardModel(),
+                         ModelCreator.makeCardModel()])
 }

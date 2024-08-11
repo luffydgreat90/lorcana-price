@@ -30,12 +30,12 @@ struct CardDetailView: View {
                         .padding()
                     
                     VStack(alignment: .leading) {
-                      Text("Rarity: ")
+                        Text("Name: " + card.name)
                         .font(.title2)
                         .fontWeight(.heavy)
                         .foregroundColor(.accentColor)
                       
-                      Text("Number:")
+                        Text("Rarity: " + card.rarity)
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
