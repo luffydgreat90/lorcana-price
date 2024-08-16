@@ -5,19 +5,36 @@ struct CardListCell: View {
     var card: CardViewModel
 
     var body: some View {
-        HStack {
-            AsyncImage(url: card.imageSmall)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-          
-            VStack(alignment: .leading) {
-                Text("Name: \(card.name)").bold()
-                Text("Rarity: \(card.rarity)")
-                Text("Price: \(card.norlamPrice)")
-                Text("Price (foil): \(card.foilPrice)")
-            }
-            Spacer()
-        }.padding(8)
+        GeometryReader { main in
+            let size = main.size
+            HStack(spacing: -30) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Name: \(card.name)")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    Text("Rarity: \(card.rarity)")
+                    Text("Price: \(card.norlamPrice)")
+                    Text("Price (foil): \(card.foilPrice)")
+                }.frame(width: size.width / 2, alignment: .leading)
+                .padding(20)
+                    .background {
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.white)
+                            .shadow(color: .black.opacity(0.08), radius: 8, x: 5, y: 5)
+                            .shadow(color: .black.opacity(0.08), radius: 8, x: -5, y: -5)
+                    }.zIndex(1)
+                Spacer()
+                
+                AsyncImage(url: card.imageSmall)
+                    .frame(width: 130, height: 180)
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
+                
+                Spacer()
+            }.padding(20)
+            
+        }
     }
 }
 
