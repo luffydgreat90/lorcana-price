@@ -3,7 +3,8 @@ import LorcanaFeed
 
 struct CardListCell: View {
     var card: CardViewModel
-
+    var animation: Namespace.ID
+    
     var body: some View {
         GeometryReader { geometry in
             let size = geometry.size
@@ -35,6 +36,7 @@ struct CardListCell: View {
                     .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
                     .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
                     .zIndex(1)
+                    .matchedGeometryEffect(id: card.id, in: animation)
                 Spacer()
             }.padding(16)
              
@@ -44,8 +46,9 @@ struct CardListCell: View {
 
 struct CustomCell_Previews: PreviewProvider {
     static var previews: some View {
-      
-        CardListCell(card: ModelCreator.makeCardModel())
+        @Namespace var ns
+        
+        return CardListCell(card: ModelCreator.makeCardModel(), animation: ns)
             .previewLayout(.sizeThatFits)
     }
 }

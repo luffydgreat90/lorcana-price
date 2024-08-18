@@ -33,6 +33,7 @@
 		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
 		F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */; };
 		F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7666C2C71D9AB008EA192 /* PriceView.swift */; };
+		F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
 		F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMapper.swift; sourceTree = "<group>"; };
 		F8F7666C2C71D9AB008EA192 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		F854E5012B2FC0730084D082 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F8F7666E2C721230008EA192 /* Extensions */,
 				F8F7666B2C71D979008EA192 /* Views */,
 				F854E5022B2FC0790084D082 /* Presentation */,
 			);
@@ -365,6 +368,14 @@
 				F8F7666C2C71D9AB008EA192 /* PriceView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F7666E2C721230008EA192 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +588,7 @@
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,
+				F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */,
 				F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,12 +10,31 @@ import LorcanaFeed
 
 struct CardDetailView: View {
     let card: CardViewModel
+    var animation: Namespace.ID
     @State var offset: CGSize = .zero
+    @Binding var show: Bool
+    @State private var offsetAnimation: Bool = false
+    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .center) {
+                HStack {
+                    Spacer()
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            offsetAnimation = false
+                        }
+                        withAnimation(.easeInOut(duration: 0.35).delay(0.1)) {
+                            show = false
+                        }
+                    } label: {
+                        Image(systemName: "x.circle.fill") 
+                    }.foregroundColor(.black).padding(.trailing, 16.0)
+    
+                }
+                
                 Text(card.name)
-                    .font(.title2)
+                    .font(.title)
                     .fontWeight(.semibold)
                 
                 Text(card.version)
@@ -24,29 +43,21 @@ struct CardDetailView: View {
                     .lineLimit(2)
                     .foregroundColor(.gray)
                 
-                HStack(alignment: .center, spacing: 16.0) {
-                    Spacer()
-                    
-                    PriceView(header: "Price:", value: card.normalPrice)
-                    
-                    PriceView(header: "Foil:", value: card.foilPrice)
-    
-                    Spacer()
-                    
-                }.padding(.top, 8)
-                
-                
                 AsyncImage(url: card.imageBig,
                            content: { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: 320, maxHeight: 700)
-                        .rotation3DEffect(offset2Angle(true), axis: (x: -1, y: 0, z: 0))
-                        .rotation3DEffect(offset2Angle(), axis: (x: 0, y: 1, z: 0))
-                        .rotation3DEffect(offset2Angle(true) * 0.1, axis: (x: 0, y: 0, z: 1))
+                        
+                        
                 },
                            placeholder: {
-                }).padding(.top, 16)
+                })
+                .frame(maxWidth: 320, maxHeight: 700)
+                .rotation3DEffect(offset2Angle(true), axis: (x: -1, y: 0, z: 0))
+                .rotation3DEffect(offset2Angle(), axis: (x: 0, y: 1, z: 0))
+                .rotation3DEffect(offset2Angle(true) * 0.1, axis: (x: 0, y: 0, z: 1))
+                .padding(.top, 16)
+                    .matchedGeometryEffect(id: card.id, in: animation)
                     .gesture(
                         DragGesture()
                             .onChanged({ value in
@@ -55,29 +66,47 @@ struct CardDetailView: View {
                                 withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.32, blendDuration: 0.32)){
                                     offset = .zero
                                 }
-                            })
+                        })
                     )
                 
+                HStack(alignment: .center, spacing: 16.0) {
+                    Spacer()
+                    
+                    PriceView(header: "Price:", value: card.normalPrice)
+                    
+                    PriceView(header: "Foil:", value: card.foilPrice)
+                    
+                    Spacer()
+                    
+                }.padding(.top, 8)
+                    .offset(y: offsetAnimation ? 0 : 100)
+                    .opacity(offsetAnimation ? 1 : 0)
             }
+        }.background(.white)
+         .onAppear {
+             withAnimation(.easeInOut(duration: 0.35).delay(0.1)) {
+                 offsetAnimation = true
+             }
         }
     }
     
     // MARK: Converting Offset Into X,Y Angles
-    func offset2Angle(_ isVertical: Bool = false)->Angle{
-        let progress = (isVertical ? offset.height : offset.width) / (isVertical ? screenSize.height : screenSize.width)
+    private func offset2Angle(_ isVertical: Bool = false)->Angle{
+        let progress = (isVertical ? offset.height : offset.width) / (isVertical ? CGSize.screenSize.height : CGSize.screenSize.width)
         return .init(degrees: progress * 10)
     }
     
-    // MARK: Device Screen Size
-    var screenSize: CGSize = {
-        guard let window = UIApplication.shared.connectedScenes.first as? UIWindowScene else{
-            return .zero
-        }
-        
-        return window.screen.bounds.size
-    }()
 }
 
 #Preview {
-    CardDetailView(card: ModelCreator.makeCardModel())
+    struct Preview: View {
+        @State var show = true
+        @Namespace var ns
+        
+        var body: some View {
+            CardDetailView(card: ModelCreator.makeCardModel(), animation: ns, show: $show)
+        }
+    }
+    
+    return Preview()
 }
