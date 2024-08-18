@@ -27,27 +27,12 @@ struct CardDetailView: View {
                 HStack(alignment: .center, spacing: 16.0) {
                     Spacer()
                     
-                    VStack(alignment: .leading) {
-                        Text("Price:")
-                            .font(.caption)
-                            
-                        Text(card.norlamPrice)
-                            .font(.title2)
-                    }
-                    .padding(8)
-                    .foregroundColor(.white)
-                    .background {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.blue)
-                    }
+                    PriceView(header: "Price:", value: card.normalPrice)
                     
-                    VStack(alignment: .leading) {
-                        Text("Foil:")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                        Text(card.foilPrice)
-                    }
+                    PriceView(header: "Foil:", value: card.foilPrice)
+    
                     Spacer()
+                    
                 }.padding(.top, 8)
                 
                 

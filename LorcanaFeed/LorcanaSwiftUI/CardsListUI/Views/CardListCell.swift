@@ -16,8 +16,8 @@ struct CardListCell: View {
                         .font(.caption)
                         .foregroundColor(.gray)
                     Text("Rarity: \(card.rarity)")
-                    Text("Price: \(card.norlamPrice)")
-                    Text("Price (foil): \(card.foilPrice)")
+                    Text("Price: \(card.normalPrice)")
+                    Text("Foil: \(card.foilPrice)")
                 }.frame(width: size.width / 2, alignment: .leading)
                 .padding(20)
                     .background {

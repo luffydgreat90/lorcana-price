@@ -15,7 +15,7 @@ public struct CardViewModel: Identifiable {
     public let imageNormal: URL?
     public let imageBig: URL?
     public let rarity: String
-    public let norlamPrice: String
+    public let normalPrice: String
     public let foilPrice: String
     public let setName: String
     public let ink: String
@@ -48,7 +48,7 @@ public struct CardViewModel: Identifiable {
         self.imageNormal = imageNormal
         self.imageBig = imageBig
         self.rarity = rarity
-        self.norlamPrice = norlamPrice
+        self.normalPrice = norlamPrice
         self.foilPrice = foilPrice
         self.setName = setName
         self.ink = ink
