@@ -12,7 +12,7 @@ public struct SetViewModel {
     public let name: String
     public let code: String
     public let released: String
-    
+
     public init(id: String, name: String, code: String, released: String) {
         self.id = id
         self.name = name

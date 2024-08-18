@@ -24,8 +24,7 @@ struct CardListCell: View {
                     .background {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(.white)
-                            .shadow(color: .black.opacity(0.08), radius: 8, x: 5, y: 5)
-                            .shadow(color: .black.opacity(0.08), radius: 8, x: -5, y: -5)
+                            .makeShadow()
                     }
                 Spacer()
                 
@@ -36,12 +35,11 @@ struct CardListCell: View {
                 },
                            placeholder: {
                 })
-                .cornerRadius(8.0)
+                .cornerRadius(4.0)
                 .background(.gray)
                 .frame(width: 150)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
-                .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
+                .makeShadow()
                 .zIndex(1)
                 .matchedGeometryEffect(id: card.id, in: animation)
                 Spacer()

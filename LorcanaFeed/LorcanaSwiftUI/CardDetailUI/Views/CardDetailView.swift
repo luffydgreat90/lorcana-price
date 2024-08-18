@@ -46,14 +46,10 @@ struct CardDetailView: View {
                 }.offset(y: offsetAnimation ? 0 : 100)
                     .opacity(offsetAnimation ? 1 : 0)
                 
-                
-                
                 AsyncImage(url: card.imageBig,
                            content: { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fit)
-                        
-                        
                 },
                            placeholder: {
                 })
@@ -94,7 +90,7 @@ struct CardDetailView: View {
     }
     
     // MARK: Converting Offset Into X,Y Angles
-    private func offset2Angle(_ isVertical: Bool = false)->Angle {
+    private func offset2Angle(_ isVertical: Bool = false) -> Angle {
         let progress = (isVertical ? offset.height : offset.width) / (isVertical ? CGSize.screenSize.height : CGSize.screenSize.width)
         return .init(degrees: progress * 10)
     }
