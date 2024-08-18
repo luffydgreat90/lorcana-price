@@ -33,15 +33,20 @@ struct CardDetailView: View {
     
                 }
                 
-                Text(card.name)
-                    .font(.title)
-                    .fontWeight(.semibold)
+                VStack {
+                    Text(card.name)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    
+                    Text(card.version)
+                        .font(.footnote)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(2)
+                        .foregroundColor(.gray)
+                }.offset(y: offsetAnimation ? 0 : 100)
+                    .opacity(offsetAnimation ? 1 : 0)
                 
-                Text(card.version)
-                    .font(.footnote)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(2)
-                    .foregroundColor(.gray)
+                
                 
                 AsyncImage(url: card.imageBig,
                            content: { image in
@@ -71,16 +76,14 @@ struct CardDetailView: View {
                 
                 HStack(alignment: .center, spacing: 16.0) {
                     Spacer()
-                    
                     PriceView(header: "Price:", value: card.normalPrice)
-                    
                     PriceView(header: "Foil:", value: card.foilPrice)
-                    
                     Spacer()
                     
-                }.padding(.top, 8)
-                    .offset(y: offsetAnimation ? 0 : 100)
-                    .opacity(offsetAnimation ? 1 : 0)
+                }
+                .padding(.top, 8)
+                .offset(y: offsetAnimation ? 0 : 100)
+                .opacity(offsetAnimation ? 1 : 0)
             }
         }.background(.white)
          .onAppear {
@@ -91,7 +94,7 @@ struct CardDetailView: View {
     }
     
     // MARK: Converting Offset Into X,Y Angles
-    private func offset2Angle(_ isVertical: Bool = false)->Angle{
+    private func offset2Angle(_ isVertical: Bool = false)->Angle {
         let progress = (isVertical ? offset.height : offset.width) / (isVertical ? CGSize.screenSize.height : CGSize.screenSize.width)
         return .init(degrees: progress * 10)
     }

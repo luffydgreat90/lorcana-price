@@ -40,7 +40,7 @@ struct CardListView: View {
                 }
             }.onChange(of: showDetailView) { newValue in
                 if !newValue {
-                    withAnimation(.easeInOut(duration: 0.05).delay(0.2)) {
+                    withAnimation(.easeInOut(duration: 0.1).delay(0.2)) {
                        
                     }
                 }

@@ -29,14 +29,21 @@ struct CardListCell: View {
                     }
                 Spacer()
                 
-                AsyncImage(url: card.imageSmall)
-                    .background(.gray)
-                    .frame(width: 150)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                    .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
-                    .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
-                    .zIndex(1)
-                    .matchedGeometryEffect(id: card.id, in: animation)
+                AsyncImage(url: card.imageNormal,
+                           content: { image in
+                    image.resizable()
+                        .aspectRatio(contentMode: .fit)
+                },
+                           placeholder: {
+                })
+                .cornerRadius(8.0)
+                .background(.gray)
+                .frame(width: 150)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
+                .zIndex(1)
+                .matchedGeometryEffect(id: card.id, in: animation)
                 Spacer()
             }.padding(16)
              
