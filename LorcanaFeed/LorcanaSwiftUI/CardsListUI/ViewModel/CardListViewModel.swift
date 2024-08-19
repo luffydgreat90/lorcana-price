@@ -9,8 +9,8 @@ import Combine
 import LorcanaFeed
 import SwiftUI
 
-public class CardListViewModel: ObservableObject {
-    private(set) var cards: [CardViewModel] = []
+public final class CardListViewModel: ObservableObject {
+    private(set) var cards: [CardViewModel]
     var card: CardViewModel? = nil
 
     public init(cards: [CardViewModel]) {

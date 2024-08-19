@@ -19,6 +19,8 @@
 		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
 		F89C96482C7283510078A824 /* SetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C96472C7283510078A824 /* SetListView.swift */; };
 		F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964A2C7283C80078A824 /* CardListViewModel.swift */; };
+		F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964D2C7287760078A824 /* SetListViewModel.swift */; };
+		F89C96502C73DDE20078A824 /* SetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964F2C73DDE20078A824 /* SetListCell.swift */; };
 		F8D995392B1CC22A001D7D73 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */; };
 		F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */; };
 		F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */; };
@@ -69,6 +71,8 @@
 		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		F89C96472C7283510078A824 /* SetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListView.swift; sourceTree = "<group>"; };
 		F89C964A2C7283C80078A824 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		F89C964D2C7287760078A824 /* SetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListViewModel.swift; sourceTree = "<group>"; };
+		F89C964F2C73DDE20078A824 /* SetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListCell.swift; sourceTree = "<group>"; };
 		F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataMapper.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		F85212E22C7279A00021D9DE /* SetUI */ = {
 			isa = PBXGroup;
 			children = (
+				F89C964C2C7287680078A824 /* ViewModel */,
 				F85212E32C7279AD0021D9DE /* Views */,
 			);
 			path = SetUI;
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F89C96472C7283510078A824 /* SetListView.swift */,
+				F89C964F2C73DDE20078A824 /* SetListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +262,14 @@
 			isa = PBXGroup;
 			children = (
 				F89C964A2C7283C80078A824 /* CardListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F89C964C2C7287680078A824 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F89C964D2C7287760078A824 /* SetListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -620,9 +634,11 @@
 				F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */,
 				F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
+				F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
 				F85212E52C7282640021D9DE /* View+Extensions.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,
+				F89C96502C73DDE20078A824 /* SetListCell.swift in Sources */,
 				F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */,
 				F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */,
 				F89C96482C7283510078A824 /* SetListView.swift in Sources */,

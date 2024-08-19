@@ -28,4 +28,13 @@ enum ModelCreator {
             classifications: ["Character"]
         )
     }
+
+    static func makeSetModel(id: String = "1") -> SetViewModel {
+        SetViewModel(
+            id: id,
+            name: "Shimmering Skies",
+            code: "5",
+            released: "11 June 2025"
+        )
+    }
 }

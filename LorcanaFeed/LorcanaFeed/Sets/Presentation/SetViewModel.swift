@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct SetViewModel {
+public struct SetViewModel: Identifiable {
     public let id: String
     public let name: String
     public let code: String
