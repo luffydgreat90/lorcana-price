@@ -15,6 +15,12 @@ public enum CardMapper {
         let image_uris: ImageURI
         let rarity: String
         let prices: Prices
+        let set: Set
+        let ink: String
+        let collector_number: String
+        let cost: Int
+        let flavor_text: String
+        let classifications: [String]
     }
     
     private struct ImageURI: Decodable {
@@ -28,8 +34,12 @@ public enum CardMapper {
     }
     
     private struct Prices: Decodable {
-        let usd: String
-        let usd_foil: String
+        let usd: Decimal
+        let usd_foil: Decimal
+    }
+    
+    private struct Set: Decodable {
+        let name: String
     }
 
     private enum Error: Swift.Error {
@@ -48,11 +58,19 @@ public enum CardMapper {
                 id: card.id,
                 name: card.name,
                 version: card.version,
-                imageSmall: card.image_uris.digital.small,
+                imageSmall: card.image_uris.digital.small, 
+                imageNormal: card.image_uris.digital.normal,
                 imageBig: card.image_uris.digital.large,
                 rarity: card.rarity,
-                norlamPrice: card.prices.usd,
-                foilPrice: card.prices.usd_foil)
+                norlamPrice: card.prices.usd.formatted(),
+                foilPrice: card.prices.usd_foil.formatted(),
+                setName: card.set.name,
+                ink: card.ink,
+                collectorNumber: card.collector_number,
+                cost: card.cost,
+                flavorText: card.flavor_text,
+                classifications: card.classifications
+            )
         }
     }
 }

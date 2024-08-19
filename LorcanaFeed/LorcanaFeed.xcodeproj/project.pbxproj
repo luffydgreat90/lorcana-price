@@ -11,11 +11,16 @@
 		F80519C52C383E2700D9FA07 /* SetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80519C42C383E2700D9FA07 /* SetViewModel.swift */; };
 		F80D8BDA2B4632D7001B3E97 /* CardPriceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */; };
 		F813A0752B3CEC9A00C4F81B /* CardsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */; };
+		F85212E52C7282640021D9DE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85212E42C7282640021D9DE /* View+Extensions.swift */; };
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
 		F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreator.swift */; };
 		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
 		F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */; };
 		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
+		F89C96482C7283510078A824 /* SetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C96472C7283510078A824 /* SetListView.swift */; };
+		F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964A2C7283C80078A824 /* CardListViewModel.swift */; };
+		F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964D2C7287760078A824 /* SetListViewModel.swift */; };
+		F89C96502C73DDE20078A824 /* SetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964F2C73DDE20078A824 /* SetListCell.swift */; };
 		F8D995392B1CC22A001D7D73 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */; };
 		F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */; };
 		F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */; };
@@ -32,7 +37,8 @@
 		F8D995862B1D39E5001D7D73 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9957E2B1D39E5001D7D73 /* LorcanaSwiftUI.framework */; };
 		F8D9958B2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */; };
 		F8F139E92B3CB48B00D4D7F1 /* CardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */; };
-		F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */; };
+		F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7666C2C71D9AB008EA192 /* PriceView.swift */; };
+		F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +63,16 @@
 		F80519C42C383E2700D9FA07 /* SetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewModel.swift; sourceTree = "<group>"; };
 		F80D8BD92B4632D7001B3E97 /* CardPriceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceMapperTests.swift; sourceTree = "<group>"; };
 		F813A0742B3CEC9A00C4F81B /* CardsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMapperTests.swift; sourceTree = "<group>"; };
+		F85212E42C7282640021D9DE /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		F854E5032B2FC1550084D082 /* ModelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreator.swift; sourceTree = "<group>"; };
 		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		F89C96472C7283510078A824 /* SetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListView.swift; sourceTree = "<group>"; };
+		F89C964A2C7283C80078A824 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		F89C964D2C7287760078A824 /* SetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListViewModel.swift; sourceTree = "<group>"; };
+		F89C964F2C73DDE20078A824 /* SetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListCell.swift; sourceTree = "<group>"; };
 		F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataMapper.swift; sourceTree = "<group>"; };
@@ -80,7 +91,8 @@
 		F8D995852B1D39E5001D7D73 /* LorcanaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9958A2B1D39E5001D7D73 /* LorcanaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSwiftUITests.swift; sourceTree = "<group>"; };
 		F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMapper.swift; sourceTree = "<group>"; };
-		F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPriceCell.swift; sourceTree = "<group>"; };
+		F8F7666C2C71D9AB008EA192 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +171,29 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		F85212E22C7279A00021D9DE /* SetUI */ = {
+			isa = PBXGroup;
+			children = (
+				F89C964C2C7287680078A824 /* ViewModel */,
+				F85212E32C7279AD0021D9DE /* Views */,
+			);
+			path = SetUI;
+			sourceTree = "<group>";
+		};
+		F85212E32C7279AD0021D9DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F89C96472C7283510078A824 /* SetListView.swift */,
+				F89C964F2C73DDE20078A824 /* SetListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F854E5012B2FC0730084D082 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F8F7666E2C721230008EA192 /* Extensions */,
+				F8F7666B2C71D979008EA192 /* Views */,
 				F854E5022B2FC0790084D082 /* Presentation */,
 			);
 			path = Shared;
@@ -178,6 +210,7 @@
 		F88989DE2B22852200BACAA0 /* CardsListUI */ = {
 			isa = PBXGroup;
 			children = (
+				F89C96492C7283B20078A824 /* ViewModel */,
 				F88989DF2B22855000BACAA0 /* Views */,
 			);
 			path = CardsListUI;
@@ -221,9 +254,24 @@
 			isa = PBXGroup;
 			children = (
 				F854E4FF2B2FC0610084D082 /* CardDetailView.swift */,
-				F8F139EC2B3CD5F100D4D7F1 /* CardPriceCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F89C96492C7283B20078A824 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F89C964A2C7283C80078A824 /* CardListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F89C964C2C7287680078A824 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F89C964D2C7287760078A824 /* SetListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F8D995262B1CC22A001D7D73 = {
@@ -336,6 +384,7 @@
 		F8D9957F2B1D39E5001D7D73 /* LorcanaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F85212E22C7279A00021D9DE /* SetUI */,
 				F854E5012B2FC0730084D082 /* Shared */,
 				F88F0CD62B2E802300D7A5F8 /* CardDetailUI */,
 				F88989DE2B22852200BACAA0 /* CardsListUI */,
@@ -357,6 +406,23 @@
 				F8F139E82B3CB48B00D4D7F1 /* CardMapper.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F8F7666B2C71D979008EA192 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7666C2C71D9AB008EA192 /* PriceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F7666E2C721230008EA192 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7666F2C721243008EA192 /* CGSize+Extensions.swift */,
+				F85212E42C7282640021D9DE /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,10 +632,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */,
-				F8F139ED2B3CD5F100D4D7F1 /* CardPriceCell.swift in Sources */,
+				F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
+				F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
+				F85212E52C7282640021D9DE /* View+Extensions.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,
+				F89C96502C73DDE20078A824 /* SetListCell.swift in Sources */,
+				F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */,
+				F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */,
+				F89C96482C7283510078A824 /* SetListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -710,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -828,7 +900,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,7 +933,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
