@@ -22,7 +22,8 @@ struct SetListCell: View {
                     Spacer()
                     Text(set.code)
                         .font(.caption)
-                }
+                        .fontWeight(.bold)
+                }.foregroundColor(.gray)
             }
             .padding(16)
             .background(.white)
