@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85DAB2C2C73F95B0001DF59 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */; };
+		F85DAB2D2C73F95B0001DF59 /* LorcanaFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F85DAB2E2C73F95B0001DF59 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */; };
+		F85DAB2F2C73F95B0001DF59 /* LorcanaSwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88C8D3F2C73F14A007D3292 /* LorcanaPriceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88C8D3E2C73F14A007D3292 /* LorcanaPriceApp.swift */; };
 		F88C8D412C73F14A007D3292 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88C8D402C73F14A007D3292 /* ContentView.swift */; };
 		F88C8D432C73F14A007D3292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88C8D422C73F14A007D3292 /* Assets.xcassets */; };
 		F88C8D462C73F14A007D3292 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88C8D452C73F14A007D3292 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F85DAB302C73F95B0001DF59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F85DAB2D2C73F95B0001DF59 /* LorcanaFeed.framework in Embed Frameworks */,
+				F85DAB2F2C73F95B0001DF59 /* LorcanaSwiftUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LorcanaSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88C8D3B2C73F14A007D3292 /* LorcanaPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LorcanaPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88C8D3E2C73F14A007D3292 /* LorcanaPriceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaPriceApp.swift; sourceTree = "<group>"; };
 		F88C8D402C73F14A007D3292 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85DAB2C2C73F95B0001DF59 /* LorcanaFeed.framework in Frameworks */,
+				F85DAB2E2C73F95B0001DF59 /* LorcanaSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F85DAB292C73F95A0001DF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */,
+				F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F88C8D322C73F14A007D3292 = {
 			isa = PBXGroup;
 			children = (
 				F88C8D3D2C73F14A007D3292 /* LorcanaPrice */,
 				F88C8D3C2C73F14A007D3292 /* Products */,
+				F85DAB292C73F95A0001DF59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +110,7 @@
 				F88C8D372C73F14A007D3292 /* Sources */,
 				F88C8D382C73F14A007D3292 /* Frameworks */,
 				F88C8D392C73F14A007D3292 /* Resources */,
+				F85DAB302C73F95B0001DF59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

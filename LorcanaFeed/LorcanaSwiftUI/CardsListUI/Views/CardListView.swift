@@ -8,12 +8,12 @@
 import SwiftUI
 import LorcanaFeed
 
-struct CardListView: View {
+public struct CardListView: View {
     @StateObject var viewModel: CardListViewModel
     @State private var showDetailView: Bool = false
     @Namespace var animation
 
-    var body: some View {
+    public var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(alignment: .center, spacing: 0) {
                 ForEach(viewModel.cards) { card in
