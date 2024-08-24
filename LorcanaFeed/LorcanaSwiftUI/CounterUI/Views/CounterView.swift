@@ -39,11 +39,7 @@ public struct CounterView: View {
                         Color(.clear)
                     }
                     .frame(width: size.width / 2, height: size.height)
-
-
                 }).frame(maxWidth: .infinity, maxHeight: .infinity)
-
-
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(viewModel.tap.backgroundColor)
