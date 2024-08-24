@@ -15,7 +15,6 @@
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
 		F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreator.swift */; };
 		F85DAB342C7930150001DF59 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DAB332C7930150001DF59 /* CounterView.swift */; };
-		F85DAB372C7A3DCC0001DF59 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DAB362C7A3DCC0001DF59 /* CounterViewModel.swift */; };
 		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
 		F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */; };
 		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
@@ -69,7 +68,6 @@
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		F854E5032B2FC1550084D082 /* ModelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreator.swift; sourceTree = "<group>"; };
 		F85DAB332C7930150001DF59 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		F85DAB362C7A3DCC0001DF59 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
@@ -231,7 +229,6 @@
 		F85DAB352C7A3DB80001DF59 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F85DAB362C7A3DCC0001DF59 /* CounterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -665,7 +662,6 @@
 				F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
 				F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */,
-				F85DAB372C7A3DCC0001DF59 /* CounterViewModel.swift in Sources */,
 				F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */,
 				F85212E52C7282640021D9DE /* View+Extensions.swift in Sources */,
 				F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */,

@@ -7,23 +7,54 @@
 
 import SwiftUI
 
+enum ViewBackground {
+    case positive, negative, neutral
+
+    var backgroundColor: Color {
+        switch self {
+        case .positive:
+                .green
+        case .negative:
+                .red
+        case .neutral:
+                .blue
+        }
+    }
+}
+
 public struct CounterView: View {
-    @StateObject var viewModel = CounterViewModel()
+    @State private var tap: ViewBackground = .neutral
+    @Binding private var lore: Int
+
+    private let isFlip: Bool
+    private let subtractHandler: () -> Void
+    private let addHandler: () -> Void
+
+    public init(isFlip:Bool = false,
+                lore:Binding<Int>,
+                subtractHandler:@escaping () -> Void,
+                addHandler:@escaping () -> Void) {
+        self._lore = lore
+        self.isFlip = isFlip
+        self.subtractHandler = subtractHandler
+        self.addHandler = addHandler
+    }
 
     public var body: some View {
         GeometryReader(content: { geometry in
             let size = geometry.size
             ZStack {
-                Text("\(viewModel.lore)")
-                    .font(.system(size: 60))
+                Text("\(lore)")
+                    .font(.system(size: 100))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
 
                 HStack(content: {
                     Button {
-                        viewModel.subtractLore()
+                        subtractHandler()
+                        tap = .negative
                         withAnimation(.spring(response: 2)) {
-                            viewModel.finishAnimation()
+                            tap = .neutral
                         }
                     } label: {
                         Color(.clear)
@@ -31,9 +62,10 @@ public struct CounterView: View {
                     .frame(width: size.width / 2, height: size.height)
 
                     Button {
-                        viewModel.addLore()
+                        addHandler()
+                        tap = .positive
                         withAnimation(.spring(response: 2)) {
-                            viewModel.finishAnimation()
+                            tap = .neutral
                         }
                     } label: {
                         Color(.clear)
@@ -42,12 +74,19 @@ public struct CounterView: View {
                 }).frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(viewModel.tap.backgroundColor)
+            .background(tap.backgroundColor)
             .cornerRadius(10)
+            .rotationEffect(.degrees(isFlip ? -180 : 0))
         })
     }
 }
 
 #Preview {
-    CounterView()
+    @State var number: Int = 4
+
+    return CounterView(isFlip: true, lore:  $number, subtractHandler: {
+        number -= 1
+    }, addHandler: {
+        number += 1
+    })
 }
