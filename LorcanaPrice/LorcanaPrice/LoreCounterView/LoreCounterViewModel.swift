@@ -8,12 +8,44 @@
 import Combine
 
 final class LoreCounterViewModel: ObservableObject {
-    @Published var lore1: LoreViewModel = LoreViewModel()
-    @Published var lore2: LoreViewModel = LoreViewModel()
+    @Published var lore1: Int = 0
+    @Published var lore2: Int = 0
+    @Published var playerTurnText = "Your Turn"
+    private var isYourTurn:Bool = false
+
+    func addLore1() {
+        if lore1 < 20 {
+            lore1 += 1
+        }
+    }
+
+    func subtractLore1() {
+        if lore1 > 0 {
+            lore1 -= 1
+        }
+    }
+
+    func addLore2() {
+        if lore2 < 20 {
+            lore2 += 1
+        }
+    }
+
+    func subtractLore2() {
+        if lore2 > 0 {
+            lore2 -= 1
+        }
+    }
 
     func clearLore() {
-        lore1.clearLore()
-        lore2.clearLore()
+        lore1 = 0
+        lore2 = 0
+    }
+
+    func changePlayer() {
+        isYourTurn = !isYourTurn
+
+        playerTurnText = isYourTurn ? "Your Turn" : "Opponents Turn"
     }
 }
 

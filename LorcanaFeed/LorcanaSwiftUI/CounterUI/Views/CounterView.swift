@@ -43,7 +43,7 @@ public struct CounterView: View {
     public var body: some View {
         GeometryReader(content: { geometry in
             let size = geometry.size
-            ZStack {
+            ZStack(alignment: .center, content: {
                 Text("\(lore)")
                     .font(.system(size: 100))
                     .fontWeight(.bold)
@@ -72,11 +72,12 @@ public struct CounterView: View {
                     }
                     .frame(width: size.width / 2, height: size.height)
                 }).frame(maxWidth: .infinity, maxHeight: .infinity)
-            }
+            })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(tap.backgroundColor)
             .cornerRadius(10)
             .rotationEffect(.degrees(isFlip ? -180 : 0))
+            .makeShadow()
         })
     }
 }
@@ -84,7 +85,7 @@ public struct CounterView: View {
 #Preview {
     @State var number: Int = 4
 
-    return CounterView(isFlip: true, lore:  $number, subtractHandler: {
+    return CounterView(isFlip: false, lore:  $number, subtractHandler: {
         number -= 1
     }, addHandler: {
         number += 1
