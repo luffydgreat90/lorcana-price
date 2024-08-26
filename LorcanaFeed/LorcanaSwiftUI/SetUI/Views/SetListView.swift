@@ -8,10 +8,14 @@
 import SwiftUI
 import LorcanaFeed
 
-struct SetListView: View {
-    @StateObject var viewModel: SetListViewModel
+public struct SetListView: View {
+    @StateObject public var viewModel: SetListViewModel
 
-    var body: some View {
+    public init(viewModel: SetListViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+
+    public var body: some View {
         ScrollView {
             VStack(content: {
                 ForEach(viewModel.sets) { set in

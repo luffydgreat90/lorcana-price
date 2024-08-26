@@ -14,6 +14,7 @@
 		F85212E52C7282640021D9DE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85212E42C7282640021D9DE /* View+Extensions.swift */; };
 		F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E4FF2B2FC0610084D082 /* CardDetailView.swift */; };
 		F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854E5032B2FC1550084D082 /* ModelCreator.swift */; };
+		F85DAB342C7930150001DF59 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DAB332C7930150001DF59 /* CounterView.swift */; };
 		F88989E12B22860300BACAA0 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88989E02B22860300BACAA0 /* CardListCell.swift */; };
 		F88F0CD32B2CF79200D7A5F8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */; };
 		F88F0CD52B2E6E4800D7A5F8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */; };
@@ -21,6 +22,7 @@
 		F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964A2C7283C80078A824 /* CardListViewModel.swift */; };
 		F89C964E2C7287760078A824 /* SetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964D2C7287760078A824 /* SetListViewModel.swift */; };
 		F89C96502C73DDE20078A824 /* SetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C964F2C73DDE20078A824 /* SetListCell.swift */; };
+		F8CDCFDF2C7BA5F400243779 /* CounterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CDCFDE2C7BA5F400243779 /* CounterBarView.swift */; };
 		F8D995392B1CC22A001D7D73 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */; };
 		F8D995532B1CFFB1001D7D73 /* ImageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */; };
 		F8D995542B1CFFB1001D7D73 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9954D2B1CFFB1001D7D73 /* URLSessionHTTPClient.swift */; };
@@ -66,6 +68,7 @@
 		F85212E42C7282640021D9DE /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		F854E4FF2B2FC0610084D082 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		F854E5032B2FC1550084D082 /* ModelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreator.swift; sourceTree = "<group>"; };
+		F85DAB332C7930150001DF59 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		F88989E02B22860300BACAA0 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		F88F0CD22B2CF79200D7A5F8 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		F88F0CD42B2E6E4800D7A5F8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		F89C964A2C7283C80078A824 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
 		F89C964D2C7287760078A824 /* SetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListViewModel.swift; sourceTree = "<group>"; };
 		F89C964F2C73DDE20078A824 /* SetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListCell.swift; sourceTree = "<group>"; };
+		F8CDCFDE2C7BA5F400243779 /* CounterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterBarView.swift; sourceTree = "<group>"; };
 		F8D995302B1CC22A001D7D73 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D995382B1CC22A001D7D73 /* LorcanaFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LorcanaFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9954C2B1CFFB1001D7D73 /* ImageDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataMapper.swift; sourceTree = "<group>"; };
@@ -205,6 +209,31 @@
 				F854E5032B2FC1550084D082 /* ModelCreator.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F85DAB312C792FF70001DF59 /* CounterUI */ = {
+			isa = PBXGroup;
+			children = (
+				F85DAB352C7A3DB80001DF59 /* ViewModel */,
+				F85DAB322C7930050001DF59 /* Views */,
+			);
+			path = CounterUI;
+			sourceTree = "<group>";
+		};
+		F85DAB322C7930050001DF59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F85DAB332C7930150001DF59 /* CounterView.swift */,
+				F8CDCFDE2C7BA5F400243779 /* CounterBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F85DAB352C7A3DB80001DF59 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F88989DE2B22852200BACAA0 /* CardsListUI */ = {
@@ -384,6 +413,7 @@
 		F8D9957F2B1D39E5001D7D73 /* LorcanaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F85DAB312C792FF70001DF59 /* CounterUI */,
 				F85212E22C7279A00021D9DE /* SetUI */,
 				F854E5012B2FC0730084D082 /* Shared */,
 				F88F0CD62B2E802300D7A5F8 /* CardDetailUI */,
@@ -631,6 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8CDCFDF2C7BA5F400243779 /* CounterBarView.swift in Sources */,
 				F854E5042B2FC1550084D082 /* ModelCreator.swift in Sources */,
 				F89C964B2C7283C80078A824 /* CardListViewModel.swift in Sources */,
 				F854E5002B2FC0610084D082 /* CardDetailView.swift in Sources */,
@@ -642,6 +673,7 @@
 				F8F766702C721243008EA192 /* CGSize+Extensions.swift in Sources */,
 				F8F7666D2C71D9AB008EA192 /* PriceView.swift in Sources */,
 				F89C96482C7283510078A824 /* SetListView.swift in Sources */,
+				F85DAB342C7930150001DF59 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +850,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeed";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -848,6 +882,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeed";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -864,6 +900,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeedTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -880,6 +918,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaFeedTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -912,6 +952,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -945,6 +987,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -962,6 +1006,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -979,6 +1025,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lorcana-feed.LorcanaSwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
