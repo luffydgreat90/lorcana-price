@@ -41,7 +41,7 @@ public struct CounterView: View {
     }
 
     public var body: some View {
-        GeometryReader(content: { geometry in
+        GeometryReader { geometry in
             let size = geometry.size
             ZStack(alignment: .center, content: {
                 Text("\(lore)")
@@ -71,14 +71,15 @@ public struct CounterView: View {
                         Color(.clear)
                     }
                     .frame(width: size.width / 2, height: size.height)
-                }).frame(maxWidth: .infinity, maxHeight: .infinity)
+                }).frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+
             })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(tap.backgroundColor)
+            .background(tap.backgroundColor.gradient)
             .cornerRadius(10)
             .rotationEffect(.degrees(isFlip ? -180 : 0))
-            .makeShadow()
-        })
+
+        }
     }
 }
 

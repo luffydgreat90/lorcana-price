@@ -11,15 +11,15 @@ import LorcanaSwiftUI
 struct LoreCounterView: View {
     @StateObject var viewModel = LoreCounterViewModel()
     @State private var showAlert = false
-    
+
     var body: some View {
         VStack {
             CounterView(isFlip:true, lore: $viewModel.lore1,           subtractHandler: viewModel.subtractLore1,
                         addHandler: viewModel.addLore1)
-            
+
             CounterView(lore: $viewModel.lore2,
                         subtractHandler: viewModel.subtractLore2, addHandler: viewModel.addLore2)
-            
+
             HStack {
                 Button(action: {
                     showAlert = true
@@ -28,15 +28,15 @@ struct LoreCounterView: View {
                     Image(systemName: "arrow.clockwise")
                         .padding(16)
                 })
-                
+
                 Spacer(minLength: 0)
-                
+
                 Text(viewModel.playerTurnText)
                     .font(.title2)
                     .fontWeight(.black)
-                
+
                 Spacer(minLength: 0)
-                
+
                 Button(action: {
                     withAnimation(.easeIn(duration: 0.2)) {
                         viewModel.changePlayer()
@@ -46,7 +46,7 @@ struct LoreCounterView: View {
                     Image(systemName: "play.fill")
                         .padding(16)
                 })
-                
+
             }.frame(maxWidth: .infinity)
                 .background(.black)
                 .foregroundColor(.white)
@@ -60,7 +60,7 @@ struct LoreCounterView: View {
                     Text("Yes")
                         .fontWeight(.bold),
                     action: {
-                        withAnimation(.easeInOut(duration: 1)) {
+                        withAnimation(.easeInOut(duration: 0.5)) {
                             viewModel.clearLore()
                         }
                     }
@@ -70,7 +70,7 @@ struct LoreCounterView: View {
                         .fontWeight(.bold)
                 )
             )
-            
+
         })
     }
 }

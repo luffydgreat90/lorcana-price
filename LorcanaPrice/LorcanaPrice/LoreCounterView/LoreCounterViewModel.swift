@@ -44,7 +44,6 @@ final class LoreCounterViewModel: ObservableObject {
 
     func changePlayer() {
         isYourTurn = !isYourTurn
-
         playerTurnText = isYourTurn ? "Your Turn" : "Opponents Turn"
     }
 }
