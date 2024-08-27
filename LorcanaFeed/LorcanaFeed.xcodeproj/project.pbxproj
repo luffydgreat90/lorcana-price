@@ -303,6 +303,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F8CDCFE02C7E80E500243779 /* TabBarUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarUI;
+			sourceTree = "<group>";
+		};
 		F8D995262B1CC22A001D7D73 = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +420,7 @@
 		F8D9957F2B1D39E5001D7D73 /* LorcanaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F8CDCFE02C7E80E500243779 /* TabBarUI */,
 				F85DAB312C792FF70001DF59 /* CounterUI */,
 				F85212E22C7279A00021D9DE /* SetUI */,
 				F854E5012B2FC0730084D082 /* Shared */,

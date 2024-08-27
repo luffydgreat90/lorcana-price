@@ -27,14 +27,17 @@ public struct CounterView: View {
     @Binding private var lore: Int
 
     private let isFlip: Bool
-    private let subtractHandler: () -> Void
-    private let addHandler: () -> Void
+    private let subtractHandler: (Int) -> Void
+    private let addHandler: (Int) -> Void
+    private let index: Int
 
     public init(isFlip:Bool = false,
                 lore:Binding<Int>,
-                subtractHandler:@escaping () -> Void,
-                addHandler:@escaping () -> Void) {
+                index: Int,
+                subtractHandler:@escaping (Int) -> Void,
+                addHandler:@escaping (Int) -> Void) {
         self._lore = lore
+        self.index = index
         self.isFlip = isFlip
         self.subtractHandler = subtractHandler
         self.addHandler = addHandler
@@ -51,7 +54,7 @@ public struct CounterView: View {
 
                 HStack(content: {
                     Button {
-                        subtractHandler()
+                        subtractHandler(index)
                         tap = .negative
                         withAnimation(.spring(response: 2)) {
                             tap = .neutral
@@ -62,7 +65,7 @@ public struct CounterView: View {
                     .frame(width: size.width / 2, height: size.height)
 
                     Button {
-                        addHandler()
+                        addHandler(index)
                         tap = .positive
                         withAnimation(.spring(response: 2)) {
                             tap = .neutral
@@ -75,7 +78,7 @@ public struct CounterView: View {
 
             })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(tap.backgroundColor.gradient)
+            .background(tap.backgroundColor)
             .cornerRadius(10)
             .rotationEffect(.degrees(isFlip ? -180 : 0))
 
@@ -86,9 +89,9 @@ public struct CounterView: View {
 #Preview {
     @State var number: Int = 4
 
-    return CounterView(isFlip: false, lore:  $number, subtractHandler: {
-        number -= 1
-    }, addHandler: {
-        number += 1
+    return CounterView(isFlip: false, lore:  $number, index: 0, subtractHandler: {_ in
+        0
+    }, addHandler: {_ in 
+        0
     })
 }

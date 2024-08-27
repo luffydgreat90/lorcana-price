@@ -9,16 +9,21 @@ import SwiftUI
 import LorcanaSwiftUI
 
 struct LoreCounterView: View {
-    @StateObject var viewModel = LoreCounterViewModel()
+    @StateObject var viewModel = LoreCounterViewModel(playerLores: [0,0])
     @State private var showAlert = false
 
     var body: some View {
         VStack {
-            CounterView(isFlip:true, lore: $viewModel.lore1,           subtractHandler: viewModel.subtractLore1,
-                        addHandler: viewModel.addLore1)
+            CounterView(isFlip:true,
+                        lore: $viewModel.lores[0],
+                        index: 0,
+                        subtractHandler: viewModel.subtractLore(index:),
+                        addHandler: viewModel.addLore(index:))
 
-            CounterView(lore: $viewModel.lore2,
-                        subtractHandler: viewModel.subtractLore2, addHandler: viewModel.addLore2)
+            CounterView(lore: $viewModel.lores[1],
+                        index: 1,
+                        subtractHandler: viewModel.subtractLore(index:),
+                        addHandler: viewModel.addLore(index:))
 
             HStack {
                 Button(action: {
