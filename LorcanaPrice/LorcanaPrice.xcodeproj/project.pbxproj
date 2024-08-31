@@ -86,6 +86,7 @@
 		F88C8D3D2C73F14A007D3292 /* LorcanaPrice */ = {
 			isa = PBXGroup;
 			children = (
+				F8CDCFE22C8292BC00243779 /* Extensions */,
 				F8CDCFD92C7A7ED900243779 /* LoreCounterView */,
 				F88C8D3E2C73F14A007D3292 /* LorcanaPriceApp.swift */,
 				F88C8D422C73F14A007D3292 /* Assets.xcassets */,
@@ -109,6 +110,13 @@
 				F8CDCFDC2C7A919800243779 /* LoreCounterViewModel.swift */,
 			);
 			path = LoreCounterView;
+			sourceTree = "<group>";
+		};
+		F8CDCFE22C8292BC00243779 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

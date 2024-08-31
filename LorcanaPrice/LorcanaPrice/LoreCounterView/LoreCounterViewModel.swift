@@ -6,30 +6,44 @@
 //
 
 import Combine
+import Foundation
+
+struct PlayerCounterModel: Identifiable {
+    let id: String = UUID().uuidString
+    var isFlip: Bool
+    var lore: Int = 0
+    var index: Int
+
+    init(isFlip: Bool = false, lore: Int = 0, index:Int) {
+        self.isFlip = isFlip
+        self.lore = lore
+        self.index = index
+    }
+}
 
 final class LoreCounterViewModel: ObservableObject {
-    @Published var lores: [Int] = []
+    @Published var lores: [PlayerCounterModel] = []
     @Published var playerTurnText = "Your Turn"
     private var isYourTurn:Bool = false
     
-    init(playerLores: [Int]) {
+    init(playerLores: [PlayerCounterModel]) {
         self.lores = playerLores
     }
 
     func addLore(index: Int) {
-        if lores[index] < 20 {
-            lores[index] += 1
+        if lores[index].lore < 20 {
+            lores[index].lore += 1
         }
     }
 
     func subtractLore(index: Int) {
-        if lores[index] > 0 {
-            lores[index] -= 1
+        if lores[index].lore > 0 {
+            lores[index].lore -= 1
         }
     }
 
     func clearLore() {
-        lores = lores.map { _ in 0 }
+        lores = lores.map { player in  PlayerCounterModel(isFlip: player.isFlip, index: player.index) }
     }
 
     func changePlayer() {

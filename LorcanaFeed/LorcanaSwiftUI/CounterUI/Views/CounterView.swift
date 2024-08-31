@@ -29,17 +29,17 @@ public struct CounterView: View {
     private let isFlip: Bool
     private let subtractHandler: (Int) -> Void
     private let addHandler: (Int) -> Void
-    private let index: Int
+    private let index:Int
 
     public init(isFlip:Bool = false,
                 lore:Binding<Int>,
-                index: Int,
+                index:Int,
                 subtractHandler:@escaping (Int) -> Void,
                 addHandler:@escaping (Int) -> Void) {
         self._lore = lore
-        self.index = index
         self.isFlip = isFlip
         self.subtractHandler = subtractHandler
+        self.index = index
         self.addHandler = addHandler
     }
 
@@ -89,9 +89,9 @@ public struct CounterView: View {
 #Preview {
     @State var number: Int = 4
 
-    return CounterView(isFlip: false, lore:  $number, index: 0, subtractHandler: {_ in
-        0
-    }, addHandler: {_ in 
-        0
+    return CounterView(isFlip: false, lore:  $number, index: 1, subtractHandler: { _ in
+
+    }, addHandler: { _ in
+
     })
 }
