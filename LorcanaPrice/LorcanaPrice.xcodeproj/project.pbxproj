@@ -16,6 +16,7 @@
 		F88C8D462C73F14A007D3292 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88C8D452C73F14A007D3292 /* Preview Assets.xcassets */; };
 		F8CDCFDB2C7A908C00243779 /* LoreCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CDCFDA2C7A908C00243779 /* LoreCounterView.swift */; };
 		F8CDCFDD2C7A919800243779 /* LoreCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CDCFDC2C7A919800243779 /* LoreCounterViewModel.swift */; };
+		F8CDCFED2C84DFD800243779 /* LorcanaSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CDCFEC2C84DFD800243779 /* LorcanaSeriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		F88C8D452C73F14A007D3292 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8CDCFDA2C7A908C00243779 /* LoreCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreCounterView.swift; sourceTree = "<group>"; };
 		F8CDCFDC2C7A919800243779 /* LoreCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreCounterViewModel.swift; sourceTree = "<group>"; };
+		F8CDCFEC2C84DFD800243779 /* LorcanaSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LorcanaSeriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		F88C8D3D2C73F14A007D3292 /* LorcanaPrice */ = {
 			isa = PBXGroup;
 			children = (
+				F8CDCFEB2C84DFB500243779 /* LorcanaSeriesView */,
 				F8CDCFE22C8292BC00243779 /* Extensions */,
 				F8CDCFD92C7A7ED900243779 /* LoreCounterView */,
 				F88C8D3E2C73F14A007D3292 /* LorcanaPriceApp.swift */,
@@ -117,6 +120,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8CDCFEB2C84DFB500243779 /* LorcanaSeriesView */ = {
+			isa = PBXGroup;
+			children = (
+				F8CDCFEC2C84DFD800243779 /* LorcanaSeriesView.swift */,
+			);
+			path = LorcanaSeriesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8CDCFED2C84DFD800243779 /* LorcanaSeriesView.swift in Sources */,
 				F8CDCFDB2C7A908C00243779 /* LoreCounterView.swift in Sources */,
 				F8CDCFDD2C7A919800243779 /* LoreCounterViewModel.swift in Sources */,
 				F88C8D3F2C73F14A007D3292 /* LorcanaPriceApp.swift in Sources */,

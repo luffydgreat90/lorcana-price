@@ -12,6 +12,7 @@ import LorcanaFeed
 struct LorcanaPriceApp: App {
     var body: some Scene {
         WindowGroup {
+            
             LoreCounterView()
         }
     }

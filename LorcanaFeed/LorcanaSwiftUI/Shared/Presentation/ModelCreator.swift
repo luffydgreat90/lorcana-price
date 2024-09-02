@@ -5,7 +5,7 @@
 //  Created by marlon von ansale on 17/12/2023.
 //
 
-import Foundation
+import SwiftUI
 import LorcanaFeed
 
 enum ModelCreator {
@@ -36,5 +36,9 @@ enum ModelCreator {
             code: "5",
             released: "11 June 2025"
         )
+    }
+
+    static func makeCustomTabItemViewModel(title: String = "Title 1", image: String = "gear", order:Int) -> CustomTabItemViewModel {
+        CustomTabItemViewModel(title: title, image: image, order: order)
     }
 }
