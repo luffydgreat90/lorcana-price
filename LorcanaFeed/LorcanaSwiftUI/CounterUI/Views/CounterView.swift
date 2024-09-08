@@ -87,11 +87,16 @@ public struct CounterView: View {
 }
 
 #Preview {
-    @State var number: Int = 4
+    struct Preview: View {
+        @State var number: Int = 4
+            var body: some View {
+                CounterView(isFlip: false, lore:  $number, index: 1, subtractHandler: { _ in
+                    number -= 1
+                }, addHandler: { _ in
+                    number += 1
+                })
+            }
+        }
 
-    return CounterView(isFlip: false, lore:  $number, index: 1, subtractHandler: { _ in
-
-    }, addHandler: { _ in
-
-    })
+    return Preview()
 }

@@ -9,8 +9,13 @@ import SwiftUI
 import LorcanaSwiftUI
 
 struct LoreCounterView: View {
+    let sharedApplication: UIApplication
     @StateObject var viewModel = LoreCounterViewModel(playerLores: [PlayerCounterModel(isFlip: true, index: 0),PlayerCounterModel(index: 1)])
     @State private var showAlert = false
+
+    init(sharedApplication: UIApplication = .shared) {
+        self.sharedApplication = sharedApplication
+    }
 
     var body: some View {
         VStack {
@@ -73,7 +78,11 @@ struct LoreCounterView: View {
                 )
             )
 
-        })
+        }).onAppear {
+            sharedApplication.isIdleTimerDisabled = true
+        }.onDisappear {
+            sharedApplication.isIdleTimerDisabled = false
+        }
     }
 }
 

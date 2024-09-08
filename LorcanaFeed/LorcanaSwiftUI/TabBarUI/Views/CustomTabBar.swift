@@ -58,7 +58,7 @@ public struct CustomTabBar: View {
             .padding([.horizontal,.top])
     }
 
-    func indicatorOffset(width: CGFloat)->CGFloat{
+    private func indicatorOffset(width: CGFloat)->CGFloat{
         let index = CGFloat(currentTab.order)
         if index == 0 {return 0}
 
