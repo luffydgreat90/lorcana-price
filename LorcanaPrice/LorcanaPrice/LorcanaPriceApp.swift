@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
-import LorcanaFeed
+import LorcanaSwiftUI
 
 @main
 struct LorcanaPriceApp: App {
     var body: some Scene {
         WindowGroup {
-            
-            LoreCounterView()
+            MainTabBarView()
         }
     }
 }

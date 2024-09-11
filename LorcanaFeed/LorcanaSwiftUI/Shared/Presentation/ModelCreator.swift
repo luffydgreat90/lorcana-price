@@ -38,7 +38,7 @@ enum ModelCreator {
         )
     }
 
-    static func makeCustomTabItemViewModel(title: String = "Title 1", image: String = "gear", order:Int) -> CustomTabItemViewModel {
-        CustomTabItemViewModel(title: title, image: image, order: order)
+    static func makeCustomTabItemViewModel(image: String = "gear", order:Int) -> CustomTabItemViewModel {
+        CustomTabItemViewModel(image: image, order: order)
     }
 }

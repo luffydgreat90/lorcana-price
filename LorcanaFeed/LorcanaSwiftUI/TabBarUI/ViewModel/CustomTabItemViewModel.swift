@@ -8,12 +8,11 @@
 import SwiftUI
 
 public struct CustomTabItemViewModel: Identifiable, Equatable {
-    public let id: String = UUID().uuidString
-    public let title: String
+    public var id: String = UUID().uuidString
     public let image: String
     public let order: Int
-    public init(title: String, image: String, order: Int) {
-        self.title = title
+
+    public init(image: String, order: Int) {
         self.image = image
         self.order = order
     }

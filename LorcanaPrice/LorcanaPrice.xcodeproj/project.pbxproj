@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83658862C90E0CE0042B1CC /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83658852C90E0CE0042B1CC /* MainTabBarView.swift */; };
+		F83658882C9228170042B1CC /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83658872C9228170042B1CC /* MainTabBarViewModel.swift */; };
 		F85DAB2C2C73F95B0001DF59 /* LorcanaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */; };
 		F85DAB2D2C73F95B0001DF59 /* LorcanaFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F85DAB2E2C73F95B0001DF59 /* LorcanaSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F83658852C90E0CE0042B1CC /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		F83658872C9228170042B1CC /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		F85DAB2A2C73F95B0001DF59 /* LorcanaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LorcanaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85DAB2B2C73F95B0001DF59 /* LorcanaSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LorcanaSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88C8D3B2C73F14A007D3292 /* LorcanaPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LorcanaPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83658842C90E0B20042B1CC /* MainTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				F83658852C90E0CE0042B1CC /* MainTabBarView.swift */,
+				F83658872C9228170042B1CC /* MainTabBarViewModel.swift */,
+			);
+			path = MainTabBarView;
+			sourceTree = "<group>";
+		};
 		F85DAB292C73F95A0001DF59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		F88C8D3D2C73F14A007D3292 /* LorcanaPrice */ = {
 			isa = PBXGroup;
 			children = (
+				F83658842C90E0B20042B1CC /* MainTabBarView */,
 				F8CDCFEB2C84DFB500243779 /* LorcanaSeriesView */,
 				F8CDCFE22C8292BC00243779 /* Extensions */,
 				F8CDCFD92C7A7ED900243779 /* LoreCounterView */,
@@ -202,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83658862C90E0CE0042B1CC /* MainTabBarView.swift in Sources */,
 				F8CDCFED2C84DFD800243779 /* LorcanaSeriesView.swift in Sources */,
 				F8CDCFDB2C7A908C00243779 /* LoreCounterView.swift in Sources */,
+				F83658882C9228170042B1CC /* MainTabBarViewModel.swift in Sources */,
 				F8CDCFDD2C7A919800243779 /* LoreCounterViewModel.swift in Sources */,
 				F88C8D3F2C73F14A007D3292 /* LorcanaPriceApp.swift in Sources */,
 			);
